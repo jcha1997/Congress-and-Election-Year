@@ -1,2 +1,3 @@
 # congress-year
- Election years along with their subsequent Congresses
+
+A list of Congresses alongside the year of their election
