@@ -1,0 +1,27 @@
+---
+title: "Congress by Election Year"
+author: "Jeremiah Cha"
+output: github_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+A simple dataset that pairs each session of the U.S. Congress with their election years. Additional variables include the start and end of the term. 
+
+# Installing
+
+Start by downloading the `.csv`, `.dta` or `.rds` file in this repository. Importing the `.dta` format into R requires external packages, such as [`haven`](https://cran.r-project.org/web/packages/haven/haven.pdf). The `.rds` file can be read into R with the following code. 
+
+```{r}
+df <- readRDS("congyear.rds")
+```
+
+Reading in the `.rds` file imports a tibble, which is compatible with the `tidyverse` suite. A preview of the data is featured below. 
+
+```{r}
+library(tidyverse)
+df
+```
